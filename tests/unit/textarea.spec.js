@@ -6,4 +6,9 @@ describe("SampleTextAreaコンポーネント", () => {
     const wrapper = shallowMount(SampleTextArea);
     expect(wrapper.isVueInstance()).toBeTruthy();
   });
+
+  it("コンポーネント上に要素が存在しない。", () => {
+    const wrapper = shallowMount(SampleTextArea);
+    expect(wrapper.isEmpty()).toBeTruthy();
+  });
 });
