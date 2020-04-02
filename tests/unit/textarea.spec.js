@@ -19,5 +19,11 @@ describe("SampleTextAreaコンポーネント", () => {
     it('初期値は""とする。', () => {
       expect(wrapper.find(idTa).element.value).toBe("");
     });
+
+    it("textareaのplaceholderは「変換したい文字列を入力してください」とする。", () => {
+      expect(wrapper.find(idTa).element.placeholder).toBe(
+        "変換したい文字列を入力してください"
+      );
+    });
   });
 });
