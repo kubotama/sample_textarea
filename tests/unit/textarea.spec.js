@@ -26,5 +26,10 @@ describe("SampleTextAreaコンポーネント", () => {
     it("textareaのplaceholderは「変換したい文字列を入力してください」とする。", () => {
       expect(elTa.placeholder).toBe("変換したい文字列を入力してください");
     });
+
+    it("textareaの行を10、桁を50とする。", () => {
+      expect(elTa.rows).toBe(10);
+      expect(elTa.cols).toBe(50);
+    });
   });
 });
