@@ -35,13 +35,15 @@ describe("SampleTextAreaコンポーネント", () => {
 
   describe("textareaに入力されたテキストの取得をテストする。", () => {
     it("abcdefghijklmnopqrstuvwxyzをセット", () => {
-      wrapper.setData({ sampleText: "abcdefghijklmnopqrstuvwxyz" });
-      expect(wrapper.vm.sampleText).toBe("abcdefghijklmnopqrstuvwxyz");
+      const testText = "abcdefghijklmnopqrstuvwxyz";
+      wrapper.setData({ sampleText: testText });
+      expect(wrapper.vm.sampleText).toBe(testText);
     });
 
     it("これはテストのテキストです。をセット", () => {
-      wrapper.setData({ sampleText: "これはテストのテキストです。" })
-      expect(wrapper.vm.sampleText).toBe("これはテストのテキストです。")
-    })
+      const testText = "これはテストのテキストです。";
+      wrapper.setData({ sampleText: testText });
+      expect(wrapper.vm.sampleText).toBe(testText);
+    });
   });
 });
