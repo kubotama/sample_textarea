@@ -38,5 +38,10 @@ describe("SampleTextAreaコンポーネント", () => {
       wrapper.setData({ sampleText: "abcdefghijklmnopqrstuvwxyz" });
       expect(wrapper.vm.sampleText).toBe("abcdefghijklmnopqrstuvwxyz");
     });
+
+    it("これはテストのテキストです。をセット", () => {
+      wrapper.setData({ sampleText: "これはテストのテキストです。" })
+      expect(wrapper.vm.sampleText).toBe("これはテストのテキストです。")
+    })
   });
 });
