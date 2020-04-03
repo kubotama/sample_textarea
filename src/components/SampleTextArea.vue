@@ -2,6 +2,7 @@
   <div>
     <textarea
       id="sampleTextArea"
+      v-model="sampleText"
       placeholder="変換したい文字列を入力してください"
       rows="10"
       cols="50"
@@ -11,6 +12,11 @@
 
 <script>
 export default {
-  name: "SampleTextArea"
+  name: "SampleTextArea",
+  data() {
+    return {
+      sampleText: ""
+    };
+  }
 };
 </script>

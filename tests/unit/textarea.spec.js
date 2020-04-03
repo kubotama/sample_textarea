@@ -32,4 +32,15 @@ describe("SampleTextAreaコンポーネント", () => {
       expect(elTa.cols).toBe(50);
     });
   });
+
+  describe("textareaに入力されたテキストの取得をテストする。", () => {
+    it.each`
+      testText
+      ${"abcdefghijklmnopqrstuvwxyz"}
+      ${"これはテストのテキストです。"}
+    `("$testText をセット", ({ testText }) => {
+      wrapper.setData({ sampleText: testText });
+      expect(wrapper.vm.sampleText).toBe(testText);
+    });
+  });
 });
