@@ -32,4 +32,11 @@ describe("SampleTextAreaコンポーネント", () => {
       expect(elTa.cols).toBe(50);
     });
   });
+
+  describe("textareaに入力されたテキストの取得をテストする。", () => {
+    it("abcdefghijklmnopqrstuvwxyzをセット", () => {
+      wrapper.setData({ sampleText: "abcdefghijklmnopqrstuvwxyz" });
+      expect(wrapper.vm.sampleText).toBe("abcdefghijklmnopqrstuvwxyz");
+    });
+  });
 });
