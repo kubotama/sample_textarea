@@ -1,19 +1,19 @@
 <template>
   <v-app>
     <v-content>
-      <HelloWorld />
+      <SampleTextArea />
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import SampleTextArea from "./components/SampleTextArea";
 
 export default {
   name: "App",
 
   components: {
-    HelloWorld
+    SampleTextArea
   },
 
   data: () => ({
