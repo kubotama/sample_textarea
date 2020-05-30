@@ -1,27 +1,23 @@
 <template>
-  <div id="app">
-    <SampleTextArea />
-  </div>
+  <v-app>
+    <v-content>
+      <SampleTextArea />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import SampleTextArea from "./components/SampleTextArea.vue";
+import SampleTextArea from "./components/SampleTextArea";
 
 export default {
   name: "App",
+
   components: {
     SampleTextArea
-  }
+  },
+
+  data: () => ({
+    //
+  })
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
